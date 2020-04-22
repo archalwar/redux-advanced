@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { Route } from 'react-router-dom';
-import Header from "./Header";
+import Header from "./components/Header";
 import Navigation from './components/Navigation';
 
 

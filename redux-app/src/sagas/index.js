@@ -3,8 +3,7 @@ import { LOAD_TODO_LIST, RENDER_TODO_LIST } from '../actions';
 
 
 
-export function* fetchToDoList() {
-  //const BASE_URL = 'https://gist.githubusercontent.com/brunokrebs/f1cacbacd53be83940e1e85860b6c65b/raw/to-do-items.json';
+export function* fetchToDoList() {  
   const BASE_URL = 'https://jsonplaceholder.typicode.com/todos';
   const response = yield call(fetch, BASE_URL, {
     method: "GET"

@@ -19,7 +19,7 @@ let AddToDo = ({ dispatch }) => {
         input.value = '';
       }}
     >
-      <Form.Group controlId="formBasicEmail">
+      <Form.Group controlId="formTextValue">
         <InputGroup>
           <Form.Control
             type="text"
