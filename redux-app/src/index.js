@@ -10,6 +10,8 @@ import { loadToDoList } from "./actions";
 import toDoApp from "./reducers";
 import rootSaga from "./sagas";
 
+import './index.css';
+
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(toDoApp, applyMiddleware(sagaMiddleware));

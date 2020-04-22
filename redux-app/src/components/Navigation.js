@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default () => (
-  <div>
+  <div className="navigation">
     <Link className="btn btn-primary" to="/">
       View To Do List Items
     </Link>

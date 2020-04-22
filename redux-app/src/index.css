@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.navigation{
+  margin: 15px 0;
+}
+h1{
+  color: #745fb5;
+}
+.btn-primary{
+  background-color: #745fb5;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+  background-color: rgba(#745fb5, 0.6);
+}
+
+.btn-secondary{
+  background-color: #345;
+  margin: 10px;
+}
