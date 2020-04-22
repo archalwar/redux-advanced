@@ -10,7 +10,9 @@ import { loadToDoList } from "./actions";
 import toDoApp from "./reducers";
 import rootSaga from "./sagas";
 
-import './index.css';
+import { ToastProvider } from "react-toast-notifications";
+
+import "./index.css";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -23,7 +25,9 @@ store.dispatch(loadToDoList());
 render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <ToastProvider>
+        <App />
+      </ToastProvider>
     </BrowserRouter>
   </Provider>,
   document.getElementById("root")
