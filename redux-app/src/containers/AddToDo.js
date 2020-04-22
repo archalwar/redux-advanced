@@ -5,10 +5,15 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
+import ToDoListContainer from "./ToDoListContainer";
+
 let AddToDo = ({ dispatch }) => {
   let input;
 
   return (
+    <div>
+    
+    
     <Form
       onSubmit={e => {
         e.preventDefault();
@@ -34,6 +39,9 @@ let AddToDo = ({ dispatch }) => {
         </InputGroup>
       </Form.Group>
     </Form>
+    <ToDoListContainer />
+    </div>
+
   );
 };
 AddToDo = connect()(AddToDo);
