@@ -8,11 +8,11 @@ const initialState = {
 export default function toDoApp(state = initialState, action) {
   switch (action.type) {
     case ADD_TODO:
-      let newToDoList = [
-        ...state.toDoList,
+      let newToDoList = [        
         {
           ...action.toDoItem,
         },
+        ...state.toDoList,
       ];
       return {
         ...state,

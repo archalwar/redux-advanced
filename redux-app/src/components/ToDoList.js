@@ -7,8 +7,8 @@ import ToDo from './ToDo';
 const ToDoList = ({ toDoList }) => (
   <Jumbotron>
     <ListGroup>
-      {toDoList.map((toDo, index) => (
-        <ToDo key={index} {...toDo} />
+      {toDoList.map((toDo) => (
+        <ToDo key={toDo.id} {...toDo} />
       ))}
     </ListGroup>
   </Jumbotron>
@@ -17,7 +17,7 @@ const ToDoList = ({ toDoList }) => (
 ToDoList.propTypes = {
   toDoList: PropTypes.arrayOf(
     PropTypes.shape({
-      _id: PropTypes.number.isRequired,
+      id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired
     }).isRequired
   ).isRequired
