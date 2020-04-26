@@ -7,22 +7,31 @@ import Header from "./components/Header";
 import Navigation from './components/Navigation';
 
 
+
+
 import AddToDo from "./containers/AddToDo";
 import ToDoListContainer from "./containers/ToDoListContainer";
 
 class App extends Component {
   render() {
+    const callSearchFunction = e => {
+      e.preventDefault();
+      alert("amanath")
+    };
+
     return (
-      <Container>
+      
+       <Container>
         <Row className="row">
-          <Col xs={12}>
+          <Col xs={12}>          
             <Header description="To do list App with React, Redux and Sega middleware" />
-            <Navigation />
+            <Navigation />            
             <Route exact path="/" component={ToDoListContainer} />
             <Route exact path="/new-item" component={AddToDo} />
           </Col>
         </Row>
-      </Container>
+      </Container> 
+      
     );
   }
 }

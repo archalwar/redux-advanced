@@ -7,7 +7,7 @@ export default () => (
       View To Do List Items
     </Link>
     <Link className="btn btn-secondary" to="/new-item">
-       Add New To Do List Item
+       Add and View New To Do List Item
     </Link>
   </div>
 );
