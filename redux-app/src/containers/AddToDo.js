@@ -9,15 +9,19 @@ import { ToastProvider, useToasts } from "react-toast-notifications";
 
 import ButtonLink from "../components/button/button";
 
+import {todosRef} from '../firebase';
+
 let AddToDo = ({ dispatch }) => {
   const { addToast } = useToasts();
   let input;
-
+ 
   const formSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();  
+
     if (!input.value.trim()) {
       return;
     }
+    todosRef.push().set({'title' : input.value});
     dispatch(addToDo(input.value));
     addToast("Saved Successfully", {
       appearance: "success",
