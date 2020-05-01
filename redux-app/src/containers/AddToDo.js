@@ -21,7 +21,7 @@ let AddToDo = ({ dispatch }) => {
     if (!input.value.trim()) {
       return;
     }
-    todosRef.push().set({'title' : input.value});
+    todosRef.push().set({'title' : input.value, 'id': new Date().getTime()});
     dispatch(addToDo(input.value));
     addToast("Saved Successfully", {
       appearance: "success",

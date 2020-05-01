@@ -7,9 +7,9 @@ import ToDo from './ToDo';
 const ToDoList = ({ toDoList }) => (
   <Jumbotron>
     <ListGroup>
-      {toDoList.map((toDo) => (
+       {toDoList.map((toDo) => (
         <ToDo key={toDo.id} {...toDo} />
-      ))}
+      ))} 
     </ListGroup>
   </Jumbotron>
 );

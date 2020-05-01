@@ -12,7 +12,7 @@ const ToDo = ({ title, completed }) => (
     transitionLeave={false}
   >
     <ListGroup.Item>
-      {title} {completed === true ? "(Completed)" : "(Not Completed)"}
+      {title} {/* {completed === true ? "(Completed)" : "(Not Completed)"} */}
     </ListGroup.Item>
   </ReactCSSTransitionGroup>
 );
